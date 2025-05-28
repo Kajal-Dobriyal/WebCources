@@ -1,0 +1,384 @@
+Reset some basic styles
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  width: 100%;
+}
+
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  line-height: 1.6;
+  background-color: #f9f9f9;
+  color: #333;
+}
+
+.container {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+/* Navigation */
+nav {
+  background-color: #1e40af; /* Indigo blue */
+  
+  color: white;
+  padding: 15px 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+}
+
+nav h1 {
+  font-size: 1.8rem;
+ 
+  font-weight: bold;
+  letter-spacing: 2px;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  gap: 15px;
+}
+
+nav ul li a {
+  color: white;
+  text-decoration: none;
+  font-weight: 600;
+  padding: 6px 10px;
+  border-radius: 4px;
+  transition: background-color 0.3s ease;
+}
+
+nav ul li a:hover {
+  background-color: #3b82f6; /* lighter blue */
+}
+
+/* Sections General */
+section {
+  padding: 60px 20px;
+  background-color:white;
+  margin-bottom: 20px;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgb(0 0 0 / 0.1);
+}
+
+section h2 {
+  font-size: 2rem;
+  margin-bottom: 20px;
+  color: black;
+}
+
+/* Home Section */
+.A1_section {
+  background-image: url('img.jpeg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  color: white;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+
+ /* About Section Layout */
+.about_wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 30px;
+}
+
+/* Text Side */
+.about_text {
+  flex: 1 1 400px;
+  max-width: 600px;
+}
+
+.about_text h2 {
+  font-size: 2rem;
+  margin-bottom: 10px;
+}
+
+.about_text p {
+  font-size: 1.1rem;
+  color: #555;
+  line-height: 1.6;
+}
+
+/* Image Side */
+.about_image {
+  flex: 1 1 200px;
+  min-height: 300px;
+  background-image: url("image.jpg");
+  background-size: cover;
+  background-position: center right;
+  background-repeat: no-repeat;
+  border-radius: 10px;
+}
+
+
+/* Resources & Courses Combined Section */
+.A7_section .learn_wrapper {
+  display: flex;
+  gap: 30px;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.resources_box,
+.courses_box {
+  background-color: #f0f4ff;
+  padding: 20px;
+  border-radius: 8px;
+  flex: 1 1 400px;
+  max-width: 48%;
+  box-shadow: 0 2px 6px rgb(59 130 246 / 0.2);
+}
+
+.resources_box h2,
+.courses_box h2 {
+  color: #1e40af;
+  margin-bottom: 15px;
+}
+
+/* iframe styles */
+.resources_box iframe {
+  border: none;
+  border-radius: 8px;
+  margin-bottom: 20px;
+}
+
+/* Course Details */
+.A4_Section ul {
+  list-style-type: none;
+  max-width: 600px;
+  margin: 0 auto;
+  padding-left: 0;
+}
+
+.A4_Section ul li {
+  background-color: #e0e7ff;
+  margin-bottom: 10px;
+  padding: 12px 15px;
+  border-radius: 5px;
+  font-weight: 600;
+  color: #1e3a8a;
+}
+
+
+
+
+/* Plans Section */
+.A5_Section ul {
+  list-style: none;
+  max-width: 600px;
+  margin: 0 auto 10px;
+  padding-left: 0;
+}
+
+.A5_Section ul li {
+  background-color: #dbeafe;
+  padding: 15px;
+  border-radius: 6px;
+  font-weight: 600;
+  margin-bottom: 10px;
+  color: #1e40af;
+}
+
+.A5_Section p {
+  text-align: center;
+  font-style: italic;
+  color: #555;
+}
+
+
+
+
+/* FAQ Section */
+.faq_section h3 {
+  margin-top: 15px;
+  color: #1e40af;
+}
+
+.faq_section p {
+  margin-bottom: 15px;
+  max-width: 700px;
+  color: #555;
+}
+
+/* Login Container */
+.login-container {
+  background-color: #e0e7ff;
+  max-width: 400px;
+  margin: 40px auto 80px;
+  padding: 30px 25px;
+  border-radius: 10px;
+  box-shadow: 0 4px 15px rgb(59 130 246 / 0.4);
+  text-align: center;
+ 
+}
+
+.login-container h2 {
+  margin-bottom: 25px;
+  color: #1e40af;
+  
+
+.login-container form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.login-container input {
+  padding: 12px 15px;
+  font-size: 1rem;
+  border-radius: 6px;
+  border: 1.5px solid #1e40af;
+  outline: none;
+  transition: border-color 0.3s ease;
+}
+
+.login-container input:focus {
+  border-color: #3b82f6;
+}
+
+.login-container button {
+  background-color: #1e40af;
+  color: white;
+  padding: 12px 15px;
+  font-weight: 700;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.login-container button:hover {
+  background-color: #3b82f6;
+}
+
+.forgot-password {
+  display: block;
+  margin: 12px 0;
+  font-size: 0.9rem;
+  color: #1e40af;
+  text-decoration: none;
+}
+
+.forgot-password:hover {
+  text-decoration: underline;
+}
+
+.login-container p {
+  font-size: 0.95rem;
+  color: #555;
+}
+
+.login-container p a {
+  color: #1e40af;
+  text-decoration: none;
+  font-weight: 600;
+}
+
+.login-container p a:hover {
+  text-decoration: underline;
+}
+
+/* Contact Section */
+.contact_section {
+  background-color: #f9f9f9;
+  padding: 60px 20px;
+  font-family: 'Segoe UI', sans-serif;
+}
+
+.contact_section .container {
+  background-color: #fff;
+  padding: 40px;
+  max-width: 600px;
+  margin: auto;
+  border-radius: 12px;
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.1);
+}
+
+.contact_section h2 {
+  text-align: center;
+  font-size: 2rem;
+  margin-bottom: 15px;
+  color: #222;
+}
+
+.contact_section p {
+  text-align: center;
+  margin-bottom: 30px;
+  color: #666;
+}
+
+.contact_section form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.contact_section input,
+.contact_section textarea {
+  padding: 12px 15px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  font-size: 1rem;
+  transition: border-color 0.3s ease;
+}
+
+.contact_section input:focus,
+.contact_section textarea:focus {
+  border-color: #0077ff;
+  outline: none;
+}
+
+.contact_section button {
+  padding: 12px;
+  background-color: #0077ff;
+  color: #fff;
+  border: none;
+  border-radius: 8px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.contact_section button:hover {
+  background-color: #005fcc;
+}
+
+
+/* Responsive tweaks */
+@media (max-width: 900px) {
+  .A7_section .learn_wrapper {
+    flex-direction: column;
+  }
+  .resources_box,
+  .courses_box {
+    max-width: 100%;
+  }
+}
+
+@media (max-width: 500px) {
+  nav ul {
+    flex-direction: column;
+    gap: 10px;
+  }
+  nav {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 10px;
+  }
+}
